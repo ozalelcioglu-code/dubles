@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duble‑S | Ana Sayfa</title>
+
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo" onclick="navigateTo('index.html')">Duble‑S</div>
+    <nav>
+        <a onclick="navigateTo('index.html')">Ana Sayfa</a>
+        <a onclick="navigateTo('urunler.html')">Ürünler</a>
+        <a onclick="navigateTo('hakkimizda.html')">Hakkımızda</a>
+        <a onclick="navigateTo('iletisim.html')">İletişim</a>
+        <div class="cart-btn" onclick="navigateTo('cart.html')">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="sepetBadge"></span>
+        </div>
+    </nav>
+</header>
+
+<section class="hero-section">
+    <h1>Ambalajda Patentli <br><span class="highlight">Berlin Gücü.</span></h1>
+    <p>Duble‑S ile endüstriyel çözümlere hızlıca ulaşın.</p>
+</section>
+
+<section class="calc-container">
+    <h3>Fiyat Hesapla</h3>
+    <input type="number" id="miktar" placeholder="Miktar Giriniz">
+    <select id="tip">
+        <option value="0.0065">Bakliyat 20x30x3 20 Mk (0.0065 €)</option>
+        <option value="0.0080">Bakliyat 25x35x3 23 Mk (0.0080 €)</option>
+        <option value="0.0140">Bakliyat 30x50x3 25 Mk (0.0140 €)</option>
+        <option value="0.090">Çöp Poşeti 120 Lt 70x110 (0.090 €)</option>
+        <option value="0.125">Çöp Poşeti 150 Lt 90x110 (0.125 €)</option>
+        <option value="0.0227">Atlet Poşet 30x18x55 16 Mk (0.0227 €)</option>
+        <option value="0.0091">Atlet Poşet 28x14x48 12 Mk (0.00910 €)</option>
+        <option value="0.0545">Atlet Poşet 30x18x55 51 Mk (0.0545 €)</option>
+        <option value="2.55">Streç Rulo Film 44x300 (2.55 €)</option>
+    </select>
+    <button onclick="hesaplaFiyat()">HESAPLA</button>
+    <div id="displaySonuc">0,00 €</div>
+</section>
+
+<div class="whatsapp-btn" onclick="openWhatsapp()">
+    <i class="fab fa-whatsapp"></i>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

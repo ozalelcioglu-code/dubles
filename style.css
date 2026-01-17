@@ -1,0 +1,277 @@
+/* ————— GLOBAL RESET & TEMEL STİLLER ————— */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ————— HEADER & NAVBAR ————— */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6%;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header .logo {
+  font-size: 28px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+header nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+header nav a {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header nav a:hover {
+  color: #0033cc;
+}
+
+header .cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+header .cart-btn i {
+  font-size: 22px;
+}
+header .cart-btn span {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #ef4444;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 7px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* ————— HERO / BAŞLIK BÖLÜMÜ ————— */
+
+.hero-section,
+.products-hero {
+  padding: 80px 6% 40px;
+  text-align: center;
+  background: #f8fafc;
+}
+.hero-section h1,
+.products-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.hero-section p,
+.products-hero p {
+  font-size: 16px;
+  color: #64748b;
+}
+
+/* ————— ÜRÜN KARTLARI GRID ————— */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px 6%;
+}
+
+.product-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: #0033cc;
+  box-shadow: 0 12px 30px rgba(0, 51, 204, 0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 8px 0;
+  font-weight: 700;
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0033cc;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  padding: 10px;
+  background: #0033cc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.product-card button:hover {
+  background: #002699;
+}
+
+/* ————— FİYAT HESAPLAMA BÖLÜMÜ ————— */
+
+.calc-container {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  padding: 30px;
+  max-width: 450px;
+  margin: 40px auto;
+}
+.calc-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.calc-container input,
+.calc-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f1f5f9;
+  font-size: 15px;
+}
+.calc-container button {
+  width: 100%;
+  padding: 14px;
+  background: #0033cc;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* ————— SEPET SAYFASI ————— */
+
+.cart-container {
+  padding: 40px 6%;
+}
+.cart-container h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 800;
+}
+.cart-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-container th,
+.cart-container td {
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+  font-size: 14px;
+  text-align: left;
+}
+.cart-container img {
+  width: 40px;
+  height: auto;
+}
+
+/* ————— İLETİŞİM FORMU ————— */
+
+.contact-container {
+  padding: 40px 6%;
+  max-width: 600px;
+  margin: auto;
+}
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f1f5f9;
+}
+.contact-container button {
+  width: 100%;
+  padding: 14px;
+  background: #0033cc;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* ————— FOOTER ————— */
+
+footer {
+  background: #ffffff;
+  padding: 40px 6%;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* ————— WHATSAPP BUTONU ————— */
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* ————— RESPONSIVE (Mobil) ————— */
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}

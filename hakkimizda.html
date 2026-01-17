@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF‑8">
+<meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+<title>Duble‑S | Hakkımızda</title>
+
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo" onclick="navigateTo('index.html')">Duble‑S</div>
+    <nav>
+        <a onclick="navigateTo('index.html')">Ana Sayfa</a>
+        <a onclick="navigateTo('urunler.html')">Ürünler</a>
+        <a onclick="navigateTo('hakkimizda.html')">Hakkımızda</a>
+        <a onclick="navigateTo('iletisim.html')">İletişim</a>
+        <div class="cart-btn" onclick="navigateTo('cart.html')">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="sepetBadge"></span>
+        </div>
+    </nav>
+</header>
+
+<section class="about-hero">
+    <h1>Geleceği Paketliyoruz</h1>
+    <p>Berlin merkezli teknoloji vizyonu ve kurucu ortaklarımızın tecrübesiyle profesyonel çözümler.</p>
+</section>
+
+<section class="team-section">
+    <div class="team-card"><img src="images/ozal.png"><h3>Özal Elçioğlu</h3><p>Kurucu Ortak</p></div>
+    <div class="team-card"><img src="images/mehmet.png"><h3>Mehmet V. Haşimi</h3><p>Kurucu Ortak</p></div>
+    <div class="team-card"><img src="images/muhammed.png"><h3>Muhammed Haşim Haşimi</h3><p>Kurucu Ortak</p></div>
+</section>
+
+<div class="whatsapp-btn" onclick="openWhatsapp()">
+    <i class="fab fa-whatsapp"></i>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF‑8">
+<meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+<title>Duble‑S | Sepetim</title>
+
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo" onclick="navigateTo('index.html')">Duble‑S</div>
+    <nav>
+        <a onclick="navigateTo('index.html')">Ana Sayfa</a>
+        <a onclick="navigateTo('urunler.html')">Ürünler</a>
+        <a onclick="navigateTo('hakkimizda.html')">Hakkımızda</a>
+        <a onclick="navigateTo('iletisim.html')">İletişim</a>
+        <div class="cart-btn" onclick="navigateTo('cart.html')">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="sepetBadge"></span>
+        </div>
+    </nav>
+</header>
+
+<section class="cart-container">
+    <h1>Sepetiniz</h1>
+    <table>
+        <thead><tr><th>Ürün</th><th>Adet</th><th>Fiyat</th><th>Tutar</th><th></th></tr></thead>
+        <tbody id="cartBody"></tbody>
+    </table>
+    <h2>Toplam: <span id="cartTotal">0,00 €</span></h2>
+</section>
+
+<div class="whatsapp-btn" onclick="openWhatsapp()">
+    <i class="fab fa-whatsapp"></i>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

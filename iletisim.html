@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF‑8">
+<meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+<title>Duble‑S | İletişim</title>
+
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo" onclick="navigateTo('index.html')">Duble‑S</div>
+    <nav>
+        <a onclick="navigateTo('index.html')">Ana Sayfa</a>
+        <a onclick="navigateTo('urunler.html')">Ürünler</a>
+        <a onclick="navigateTo('hakkimizda.html')">Hakkımızda</a>
+        <a onclick="navigateTo('iletisim.html')">İletişim</a>
+        <div class="cart-btn" onclick="navigateTo('cart.html')">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="sepetBadge"></span>
+        </div>
+    </nav>
+</header>
+
+<section class="contact-container">
+    <h1>Bize Ulaşın</h1>
+    <form id="contactForm" onsubmit="submitContact(event)">
+        <input type="text" id="formName" placeholder="Adınız Soyadınız" required>
+        <input type="email" id="formEmail" placeholder="E‑posta Adresiniz" required>
+        <textarea id="formMessage" placeholder="Mesajınız" required></textarea>
+        <button type="submit">MESAJI GÖNDER</button>
+    </form>
+    <div id="formResult"></div>
+</section>
+
+<div class="whatsapp-btn" onclick="openWhatsapp()">
+    <i class="fab fa-whatsapp"></i>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
